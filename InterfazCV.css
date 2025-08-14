@@ -1,0 +1,259 @@
+/* Fondo general y tipografía */
+body {
+    background-color: #e08a12;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navegación */
+nav {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+}
+
+nav label {
+    color: #e08a12
+;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+nav select {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background: #222;
+    color: #fff;
+    font-size: 1em;
+}
+
+nav select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #e08a12
+;
+}
+
+/* Secciones */
+section {
+    background: #111;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    box-shadow: 0 4px 20px rgba(255,255,255,0.05);
+    animation: fadeIn 1s ease;
+}
+
+section h2 {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Títulos generales */
+h1, h3 {
+    color: #e08a12
+;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+
+/* Imagen de perfil */
+section#Inicio img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 4px solid #e08a12;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+section#Inicio img:hover {
+    transform: scale(1.05) rotate(-2deg);
+    border-color: #fff;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+}
+
+ul li strong {
+    color: #ff1212;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 24px 0 12px;
+    text-align: center;
+    border-top: 2px solid #222;
+}
+
+footer .social-icon {
+    color: #800000;
+    margin: 0 16px;
+    transition: transform 0.3s;
+}
+
+footer .social-icon:hover {
+    color: #ff1212;
+    transform: scale(1.2) rotate(-8deg);
+}
+
+footer svg {
+    width: 36px;
+    height: 36px;
+    fill: currentColor;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    section {
+        max-width: 95vw;
+        padding: 18px 5vw;
+    }
+    section#Inicio img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Título de idiomas interactivo */
+.idioma-label {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: #800000;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.bandera {
+    width: 32px;
+    height: 22px;
+    margin-right: 12px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+.idioma-info {
+    display: none;
+    background: #222;
+    color: #f0f4f8;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-top: 4px;
+    font-size: 0.98em;
+}
+
+.idioma input[type="checkbox"] {
+    display: none;
+}
+
+.idioma input[type="checkbox"]:checked ~ .idioma-info {
+    display: block;
+}
+
+/* Efectos */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+ul:hover, .idioma-label:hover {
+    box-shadow: 0 4px 24px #64ffda44;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+#Experiencia {
+    background-color: #0b0b0b;
+    color: #fff6f6;
+}
+
+#Experiencia h3 {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#contacto {
+  padding: 40px;
+  text-align: center;
+}
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+.btn {
+  padding: 12px 20px;
+  background-color: #000000;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #1061ca;
+}
+
+.boton-correo {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.boton-correo:hover {
+  background-color: #0056b3;
+}
+
+.boton-whatsapp {
+  display: inline-block;
+  background-color: #25D366; /* Verde oficial de WhatsApp */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-whatsapp:hover {
+  background-color: #1ebe57;
+}
